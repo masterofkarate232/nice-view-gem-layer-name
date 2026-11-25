@@ -4,7 +4,6 @@
  * Opts: --bpp 1 --size 22 --no-compress --font Custom Font.woff --range 32-127 --format lvgl -o custom_font_22.c
  ******************************************************************************/
 
-#include "../../include/fonts/custom_font_22.h"
 
 #include <lvgl.h>
 
