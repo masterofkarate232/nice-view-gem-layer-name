@@ -6,7 +6,6 @@
 
 // I'm not sure why I had to add 2 to the size I was using in Photopea, which was 41.
 
-#include "../../include/fonts/custom_font_outline.h"
 
 #include <lvgl.h>
 
