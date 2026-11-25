@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <zmk/display.h>
 #include "widgets/screen.h"
 
