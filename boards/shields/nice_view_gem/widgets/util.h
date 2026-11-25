@@ -8,21 +8,21 @@
 
 #define BUFFER_SIZE 68
 #define BUFFER_OFFSET_MIDDLE -44
-#define LAYER_CANVAS_SIZE 136   // middle + bottom merged (68 + 68)
-#define LAYER_BUFFER_OFFSET -44 // right edge aligns with old middle's right edge
+#define LAYER_CANVAS_SIZE 136
+#define LAYER_BUFFER_OFFSET -44
 
 #define CANVAS_SIZE 68
 #define CANVAS_COLOR_FORMAT LV_COLOR_FORMAT_L8
-#define CANVAS_BUF_SIZE                                                                            \
-    LV_CANVAS_BUF_SIZE(CANVAS_SIZE, CANVAS_SIZE, LV_COLOR_FORMAT_GET_BPP(CANVAS_COLOR_FORMAT),     \
+#define CANVAS_BUF_SIZE \
+    LV_CANVAS_BUF_SIZE(CANVAS_SIZE, CANVAS_SIZE, LV_COLOR_FORMAT_GET_BPP(CANVAS_COLOR_FORMAT), \
                        LV_DRAW_BUF_STRIDE_ALIGN)
-#define LAYER_CANVAS_BUF_SIZE                                                                      \
-    LV_CANVAS_BUF_SIZE(LAYER_CANVAS_SIZE, CANVAS_SIZE,                                             \
+#define LAYER_CANVAS_BUF_SIZE \
+    LV_CANVAS_BUF_SIZE(LAYER_CANVAS_SIZE, CANVAS_SIZE, \
                        LV_COLOR_FORMAT_GET_BPP(CANVAS_COLOR_FORMAT), LV_DRAW_BUF_STRIDE_ALIGN)
 
-#define LVGL_BACKGROUND                                                                            \
+#define LVGL_BACKGROUND \
     IS_ENABLED(CONFIG_NICE_VIEW_WIDGET_INVERTED) ? lv_color_black() : lv_color_white()
-#define LVGL_FOREGROUND                                                                            \
+#define LVGL_FOREGROUND \
     IS_ENABLED(CONFIG_NICE_VIEW_WIDGET_INVERTED) ? lv_color_white() : lv_color_black()
 
 struct status_state {
@@ -54,4 +54,4 @@ void canvas_draw_text(lv_obj_t *canvas, int32_t x, int32_t y, int32_t max_w,
 void canvas_draw_line(lv_obj_t *canvas, const lv_point_t *points, uint32_t point_cnt,
                       lv_draw_line_dsc_t *line_dsc);
 void canvas_draw_img(lv_obj_t *canvas, int32_t x, int32_t y, const void *src,
-                     lv_draw_image_dsc_t *img_dsc);
+                     lv_draw_image_dsc_t *img_dsc);   
