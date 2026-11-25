@@ -6,7 +6,6 @@
 
 // I'm not sure why I had to add 2 to the size I was using in Photopea, which was 39.
 
-#include "../../include/fonts/custom_font_shadow.h"
 
 #include <lvgl.h>
 
