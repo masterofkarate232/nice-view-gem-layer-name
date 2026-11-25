@@ -8,8 +8,7 @@ struct zmk_widget_screen {
     sys_snode_t node;
     lv_obj_t *obj;
     uint8_t cbuf[CANVAS_BUF_SIZE];
-    uint8_t cbuf2[CANVAS_BUF_SIZE];
-    uint8_t cbuf3[CANVAS_BUF_SIZE];
+    uint8_t cbuf2[LAYER_CANVAS_BUF_SIZE];
     struct status_state state;
 };
 
