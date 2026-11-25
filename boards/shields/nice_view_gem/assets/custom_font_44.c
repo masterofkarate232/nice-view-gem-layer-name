@@ -4,8 +4,6 @@
  * Opts: --bpp 1 --size 44 --no-compress --font Custom Font.woff --range 32-127 --format lvgl -o custom_font_44.c
  ******************************************************************************/
 
-#include "../../include/fonts/custom_font_44.h"
-
 #include <lvgl.h>
 
 #ifndef CUSTOM_FONT_44
